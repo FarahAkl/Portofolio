@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Nata+Sans:wght@100..900&display=swap");
+
 :root {
   --main-color: #1a3b94;
 }
@@ -5,9 +7,9 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Poppins", sans-serif;
 }
 body {
+  font-family: "Nata Sans", sans-serif;
   background: #ffffff;
   color: #1f1f1f;
   line-height: 1.6;
@@ -23,20 +25,24 @@ header {
   background: rgba(255, 255, 255, 0.95);
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
   z-index: 100;
-}
-header .logo {
-  font-weight: 700;
-  font-size: 1.5rem;
-  color: var(--main-color);
-}
-nav a {
-  margin-left: 2rem;
-  text-decoration: none;
-  font-weight: 500;
-  color: #333;
-}
-nav a:hover {
-  color: var(--main-color);
+
+  .logo {
+    font-weight: 700;
+    font-size: 1.5rem;
+    color: var(--main-color);
+  }
+
+  nav {
+    a {
+      margin-left: 2rem;
+      text-decoration: none;
+      font-weight: 500;
+      color: #333;
+      &:hover {
+        color: var(--main-color);
+      }
+    }
+  }
 }
 
 .hero {
@@ -45,41 +51,41 @@ nav a:hover {
   justify-content: space-between;
   padding: 8rem 10% 4rem;
   gap: 2rem;
-}
-.hero-text {
-  flex: 1;
-}
-.hero-text h1 {
-  font-size: 3rem;
-  margin-bottom: 1rem;
-}
-.hero-text p {
-  max-width: 500px;
-  margin-bottom: 2rem;
-}
-.hero-text .btn {
-  display: inline-block;
-  padding: 0.8rem 1.5rem;
-  border-radius: 50px;
-  background: var(--main-color);
-  color: #fff;
-  text-decoration: none;
-  margin-right: 1rem;
-}
-.hero-text .btn-outline {
-  background: transparent;
-  border: 2px solid var(--main-color);
-  color: var(--main-color);
-}
-.hero-img {
-  flex: 1;
-  display: flex;
-  justify-content: center;
-}
-.hero-img img {
-  width: 350px;
-  border-radius: 20px;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  .hero-text {
+    flex: 1;
+    h1 {
+      font-size: 3rem;
+      margin-bottom: 1rem;
+    }
+    p {
+      max-width: 500px;
+      margin-bottom: 2rem;
+    }
+    .btn {
+      display: inline-block;
+      padding: 0.8rem 1.5rem;
+      border-radius: 50px;
+      background: var(--main-color);
+      color: #fff;
+      text-decoration: none;
+      margin-right: 1rem;
+    }
+    .btn-outline {
+      background: transparent;
+      border: 2px solid var(--main-color);
+      color: var(--main-color);
+    }
+  }
+  .hero-img {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    img {
+      width: 350px;
+      border-radius: 20px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    }
+  }
 }
 
 section {
@@ -89,29 +95,29 @@ h2 {
   font-size: 2rem;
   margin-bottom: 1.5rem;
   position: relative;
-}
-h2::after {
-  content: "";
-  position: absolute;
-  width: 50px;
-  height: 4px;
-  background: var(--main-color);
-  bottom: -8px;
-  left: 0;
-  border-radius: 2px;
+  &::after {
+    content: "";
+    position: absolute;
+    width: 50px;
+    height: 4px;
+    background: var(--main-color);
+    bottom: -8px;
+    left: 0;
+    border-radius: 2px;
+  }
 }
 
 .about-content {
   display: flex;
   gap: 2rem;
   align-items: center;
-}
-.about-content img {
-  width: 250px;
-  border-radius: 15px;
-}
-.about-content p {
-  flex: 1;
+  img {
+    width: 250px;
+    border-radius: 15px;
+  }
+  p {
+    flex: 1;
+  }
 }
 
 .skills-grid {
@@ -137,43 +143,43 @@ h2::after {
   border-radius: 10px;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
   overflow: hidden;
-}
-.project-card img {
-  width: 100%;
-  height: 200px;
-  object-fit: cover;
-}
-.project-card .content {
-  padding: 1rem;
-}
-.project-card h4 {
-  margin-bottom: 0.5rem;
-}
-.project-card p {
-  margin-bottom: 0.5rem;
-}
-.project-card a {
-  color: var(--main-color);
-  text-decoration: none;
-  font-weight: 500;
+  img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+  }
+  .content {
+    padding: 1rem;
+  }
+  h4 {
+    margin-bottom: 0.5rem;
+  }
+  p {
+    margin-bottom: 0.5rem;
+  }
+  a {
+    color: var(--main-color);
+    text-decoration: none;
+    font-weight: 500;
+  }
 }
 
 .contact-info {
   display: grid;
   gap: 0.5rem;
-}
-.contact-info a {
-  color: var(--main-color);
-  text-decoration: none;
+  a {
+    color: var(--main-color);
+    text-decoration: none;
+  }
 }
 
-footer {
+/* footer {
   background: #1f1f1f;
   color: #fff;
   text-align: center;
   padding: 1rem;
   margin-top: 2rem;
-}
+} */
 
 @media (max-width: 992px) {
   .hero {
