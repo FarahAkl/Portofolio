@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Nata+Sans:wght@100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400..700;1,400..700&display=swap");
 
 :root {
   --main-color: #1a3b94;
@@ -9,10 +9,27 @@
   box-sizing: border-box;
 }
 body {
-  font-family: "Nata Sans", sans-serif;
+  font-family: "Arimo", sans-serif;
   background: #ffffff;
   color: #1f1f1f;
   line-height: 1.6;
+}
+.btn-container {
+  display: flex;
+}
+.btn {
+  display: inline-block;
+  padding: 0.8rem 1.5rem;
+  border-radius: 50px;
+  background: var(--main-color);
+  color: #fff;
+  text-decoration: none;
+  margin-right: 1rem;
+}
+.btn-outline {
+  background: transparent;
+  border: 2px solid var(--main-color);
+  color: var(--main-color);
 }
 header {
   display: flex;
@@ -61,20 +78,6 @@ header {
       max-width: 500px;
       margin-bottom: 2rem;
     }
-    .btn {
-      display: inline-block;
-      padding: 0.8rem 1.5rem;
-      border-radius: 50px;
-      background: var(--main-color);
-      color: #fff;
-      text-decoration: none;
-      margin-right: 1rem;
-    }
-    .btn-outline {
-      background: transparent;
-      border: 2px solid var(--main-color);
-      color: var(--main-color);
-    }
   }
   .hero-img {
     flex: 1;
@@ -90,6 +93,9 @@ header {
 
 section {
   padding: 4rem 10%;
+  /* box-shadow:  0 4px 6px -10px #1a3b9451; */
+  /* box-shadow:  0 2px 8px rgba(0, 0, 0, 0.05); */
+  box-shadow: 0 -8px 41px -1px #1a3b9422 inset;
 }
 h2 {
   font-size: 2rem;
@@ -157,10 +163,9 @@ h2 {
   p {
     margin-bottom: 0.5rem;
   }
-  a {
-    color: var(--main-color);
-    text-decoration: none;
-    font-weight: 500;
+  .btn-container {
+    display: flex;
+    justify-content: space-between;
   }
 }
 
@@ -173,14 +178,6 @@ h2 {
   }
 }
 
-/* footer {
-  background: #1f1f1f;
-  color: #fff;
-  text-align: center;
-  padding: 1rem;
-  margin-top: 2rem;
-} */
-
 @media (max-width: 992px) {
   .hero {
     flex-direction: column;
@@ -188,5 +185,23 @@ h2 {
   }
   .about-content {
     flex-direction: column;
+  }
+  .btn-container {
+    flex-wrap: wrap;
+    gap: 20px;
+    .btn {
+      width: 80%;
+      text-align: center;
+    }
+  }
+  .project-card {
+    .content {
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+    }
+    .btn-container{
+        justify-content: center;
+    }
   }
 }
