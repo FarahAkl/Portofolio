@@ -1,9 +1,10 @@
 const menuIcon = document.querySelector(".menu-icon");
 const toggleBtn = document.getElementById("theme-toggle");
-
+// Responsive Header
 menuIcon.addEventListener("click", () => {
   document.querySelector(".navbar").classList.toggle("show");
 });
+// Dark Mode Toggle
 toggleBtn.addEventListener("click", () => {
   document.body.classList.toggle("dark-mode");
   toggleBtn.textContent = document.body.classList.contains("dark-mode")

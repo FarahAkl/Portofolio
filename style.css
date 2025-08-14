@@ -1,3 +1,4 @@
+/* Import from Google fonts */
 @import url("https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400..700;1,400..700&display=swap");
 
 :root {
@@ -32,11 +33,11 @@ body {
     }
   }
 }
-
 section {
   padding: 4rem 10%;
   box-shadow: 0 -8px 41px -1px #1a3b9422 inset;
 }
+/* Special heading style */
 h2 {
   font-size: 2rem;
   margin-bottom: 1.5rem;
@@ -52,6 +53,7 @@ h2 {
     border-radius: 2px;
   }
 }
+/* Buttons styles */
 .btn-container {
   display: flex;
   .btn {
@@ -82,6 +84,7 @@ h2 {
   right: 0;
   padding: 10px;
 }
+/* Header Style */
 header {
   display: flex;
   justify-content: space-between;
@@ -116,6 +119,7 @@ header {
     }
   }
 }
+/* Hero section */
 .hero {
   display: flex;
   align-items: center;
@@ -144,6 +148,7 @@ header {
     }
   }
 }
+/* About section */
 .about-content {
   display: flex;
   gap: 8rem;
@@ -156,6 +161,7 @@ header {
     flex: 1;
   }
 }
+/* Education section */
 .education-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -177,6 +183,7 @@ header {
     }
   }
 }
+/* Skills section */
 .skills-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
@@ -189,6 +196,7 @@ header {
     font-weight: 500;
   }
 }
+/* Projects section */
 .projects-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -226,6 +234,7 @@ header {
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
   }
 }
+/* Contact section */
 .contact-info {
   display: grid;
   gap: 0.5rem;
@@ -249,6 +258,7 @@ footer {
   font-size: 20px;
   color: #f4f6fb;
 }
+/* Media queries */
 @media (max-width: 768px) {
   header {
     .navbar {
