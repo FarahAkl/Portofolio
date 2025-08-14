@@ -65,6 +65,7 @@ header {
   .logo {
     font-weight: 700;
     font-size: 1.5rem;
+    text-decoration: none;
     color: var(--main-color);
   }
   .menu-icon {
@@ -197,9 +198,17 @@ header {
 .contact-info {
   display: grid;
   gap: 0.5rem;
-  a {
-    color: var(--main-color);
-    text-decoration: none;
+  p {
+    margin: 5px 0;
+    i {
+      color: var(--main-color);
+      font-size: 1.3rem;
+      margin-right: 10px;
+    }
+    a {
+      color: var(--main-color);
+      text-decoration: none;
+    }
   }
 }
 footer {
@@ -210,42 +219,46 @@ footer {
   color: #f4f6fb;
 }
 @media (max-width: 768px) {
-  .navbar {
-    display: none;
-    flex-direction: column;
-    position: absolute;
-    top: 70px;
-    right: 10%;
-    background: #fff;
-    padding: 1rem;
-    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
-    border-radius: 8px;
-    a {
-      margin: 0.5rem 0;
+  header {
+    .navbar {
+      display: none;
+      flex-direction: column;
+      position: absolute;
+      top: 70px;
+      right: 10%;
+      background: #fff;
+      padding: 1rem;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+      border-radius: 8px;
+      &.show {
+        display: flex;
+      }
+      a {
+        margin: 0.5rem 0;
+        display: block;
+      }
+    }
+    .menu-icon {
       display: block;
     }
   }
-
-  .menu-icon {
-    display: block;
-  }
-
-  .navbar.show {
-    display: flex;
-  }
 }
-
 @media (max-width: 992px) {
   .hero {
     flex-direction: column;
     padding-top: 6rem;
     text-align: center;
+    .hero-img {
+      display: none;
+    }
     .btn-container {
       justify-content: center;
     }
   }
   .about-content {
     flex-direction: column;
+    gap: 4rem;
+    text-align: center;
   }
   .btn-container {
     flex-wrap: wrap;
@@ -255,14 +268,16 @@ footer {
       text-align: center;
     }
   }
-  .project-card {
-    .content {
-      display: flex;
-      flex-direction: column;
-      text-align: center;
-    }
-    .btn-container {
-      justify-content: center;
+  .projects-grid {
+    .project-card {
+      .content {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+      }
+      .btn-container {
+        justify-content: center;
+      }
     }
   }
 }
