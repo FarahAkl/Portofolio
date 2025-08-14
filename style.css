@@ -126,6 +126,28 @@ h2 {
   }
 }
 
+.education-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+}
+.edu-card {
+  background: #fff;
+  padding: 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+  h4 {
+    margin-bottom: 0.3rem;
+    color: var(--main-color);
+  }
+  span {
+    display: block;
+    font-size: 0.9rem;
+    color: #666;
+    margin-bottom: 0.5rem;
+  }
+}
+
 .skills-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
@@ -182,6 +204,10 @@ h2 {
   .hero {
     flex-direction: column;
     padding-top: 6rem;
+    text-align: center;
+    .btn-container{
+      justify-content: center;
+    }
   }
   .about-content {
     flex-direction: column;
@@ -200,8 +226,8 @@ h2 {
       flex-direction: column;
       text-align: center;
     }
-    .btn-container{
-        justify-content: center;
+    .btn-container {
+      justify-content: center;
     }
   }
 }
