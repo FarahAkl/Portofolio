@@ -35,9 +35,9 @@ Designed with a clean UI and smooth transitions for an engaging user experience.
 portfolio/
 │── index.html         # Main HTML file (Portfolio content)
 │── style.css          # CSS styles (layout, colors, animations, responsive design)
-│── script.js          # JavaScript (menu toggle, dark mode, interactions)
-│── /images            # All images (profile photo, project screenshots, icons)
-│── README.md          # Project documentation
+│── main.js            # JavaScript (menu toggle, dark mode, interactions)
+│── /imgs              # All images (profile photo, project screenshots, icons)
+│__ README.md          # Project documentation
 
 ```
 ## 🚀 How to Run Locally
