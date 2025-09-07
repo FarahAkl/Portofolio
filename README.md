@@ -45,6 +45,6 @@ portfolio/
 1. Clone this repository:
 
 ```
-git clone https://github.com/YourUsername/portfolio.git
+git clone https://github.com/FarahAkl/portfolio.git
 ```
 2. Open the index.html file in your browser.
